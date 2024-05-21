@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-Using Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+          background-color: whitesmoke;
+          height: 100vh;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 0.4fr 1.5fr 1fr 1fr;
+          row-gap: 2px;
+          column-gap: 2px;
+        }
+        .items{
+            background-color: rgb(12, 148, 112);
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            text-align: center;
+        }
+        .item2{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            background-color: rgb(93, 179, 179);
+        }
+        .item3{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            background-color: rgb(73, 145, 121);
+        }
+        .footer{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            background-color: rgb(14, 65, 65);
+        }
+        .boxes{
+            background-color: rgb(238, 155, 197);
+        }
+        .boxe{
+            background-color: blueviolet;
+        }
+        h2{
+            margin-top: 15px;
+            color: aliceblue;
+            font-family: monospace;
+        }
+        .h{
+            text-align: center;
+        }
+        .main{
+            text-align: center;
+        }
+        .footerr{
+            text-align: center;
+        }
+        .BOX1{
+            text-align: center;
+        }
+        .BOX2{
+            text-align: center;
+        }
+        .BOX3{
+            text-align: center;
+        }
+        .BOX4{
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1"><h2>NAVBAR</h2></div>
+        <div class="items item2"><h2 class="h">SIDEBAR</h2></div>
+        <div class="items item3"><h2 class="main">MAIN</h2></div> 
+        <div class="items boxes"><h2 class="BOX1">BOX1</h2></div>
+        <div class="items boxe"><h2 class="BOX2">BOX2</h2></div>
+        <div class="items boxes"><h2 class="BOX3">BOX3</h2></div>
+        <div class="items boxe"><h2 class="BOX4">BOX4</h2></div>
+        <div class="items footer"><h2 class="footerr">FOOTER</h2></div>
+       
+    </div>
+</body>
+</html>
